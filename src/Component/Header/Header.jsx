@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
-            <a style={{marginLeft:'20px'}} href="/">home</a>
-            <a style={{marginLeft:'20px'}} href="/about">about</a>
-            <a style={{marginLeft:'20px'}} href="/contact">contact</a>
+            <Link style={{marginLeft:'20px'}} to="/">home</Link>
+            <Link style={{marginLeft:'20px'}} to="/about">about</Link>
+            <Link style={{marginLeft:'20px'}} to="/contact">contact</Link>
+           
         </div>
     );
 };
