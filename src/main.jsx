@@ -10,11 +10,16 @@ import About from './Component/About/About.jsx';
 import Contact from './Component/Contact/Contact.jsx';
 import Header from './Component/Header/Header.jsx';
 import Home from './Component/Home/Home.jsx';
+import First from './Component/Fist/First.jsx';
 const router= createBrowserRouter([
   {   
     path:"/",
-  element: <App></App>,
+  element: <Home></Home>,
   children: [
+    {
+      path: "/",
+      element: <First></First>
+    },
     {
       path: "about",
       element: <About></About>
