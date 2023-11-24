@@ -11,6 +11,8 @@ import Contact from './Component/Contact/Contact.jsx';
 import Header from './Component/Header/Header.jsx';
 import Home from './Component/Home/Home.jsx';
 import First from './Component/Fist/First.jsx';
+import Loaddata from './Component/Loaddata/Loaddata.jsx';
+
 const router= createBrowserRouter([
   {   
     path:"/",
@@ -27,6 +29,15 @@ const router= createBrowserRouter([
     {
       path: "/contact",
       element: <Contact></Contact>
+    },
+    {
+      path: "/data",
+      element: <Loaddata></Loaddata>,
+      
+      loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+      
+  
+      
     },
   ]
 
