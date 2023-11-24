@@ -12,6 +12,7 @@ import Header from './Component/Header/Header.jsx';
 import Home from './Component/Home/Home.jsx';
 import First from './Component/Fist/First.jsx';
 import Loaddata from './Component/Loaddata/Loaddata.jsx';
+import Userdetails from './Component/Userdetail/Userdetails.jsx';
 
 const router= createBrowserRouter([
   {   
@@ -29,6 +30,10 @@ const router= createBrowserRouter([
     {
       path: "/contact",
       element: <Contact></Contact>
+    },
+    {
+      path: "/userdetais/:id",
+      element: <Userdetails></Userdetails>
     },
     {
       path: "/data",
