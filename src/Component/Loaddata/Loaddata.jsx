@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import User from '../User/User';
 
 
 const Loaddata = () => {
@@ -11,7 +12,14 @@ console.log(data);
 
     return (
         <div>
-            <h2>this  is the basic page to load data</h2>
+            
+            <h2>   The Number of   User is  :  {data.length} </h2>
+            {
+                data.map( user => <User
+                key={data.id} user={user}
+                ></User>)
+            }  
+            
         </div>
     );
 };
