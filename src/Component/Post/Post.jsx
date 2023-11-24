@@ -6,7 +6,7 @@ const Post = () => {
     const post=useLoaderData();
 
     return (
-        <div >
+        <div style={{marginTop:'20px'}}>
              post number is : {post.length}
              {
                 post.map(post=> <Postdetails  post={post} key={post.id}></Postdetails>)

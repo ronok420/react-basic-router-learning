@@ -14,6 +14,7 @@ import First from './Component/Fist/First.jsx';
 import Loaddata from './Component/Loaddata/Loaddata.jsx';
 import Userdetails from './Component/Userdetail/Userdetails.jsx';
 import Post from './Component/Post/Post.jsx';
+import Singlepost from './Component/Singlepost/Singlepost.jsx';
 
 const router= createBrowserRouter([
   {   
@@ -51,6 +52,11 @@ const router= createBrowserRouter([
       path:"/post",
       element:<Post></Post>,
       loader: ()=> fetch('https://jsonplaceholder.typicode.com/posts')
+    },
+    {
+      path:"/post/:id",
+      element:<Singlepost></Singlepost>,
+      loader: ({params})=> fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
     }
   ]
 
