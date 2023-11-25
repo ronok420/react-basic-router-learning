@@ -1,17 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Activelink from '../Activelink/Activelink';
+import './Header.css';
 
 const Header = () => {
-    return (
-        <div>
-            <Link style={{margin:'20px'}} to="/">home</Link>
-            <Link style={{margin:'20px'}} to="/about">about</Link>
-            <Link style={{margin:'20px'}} to="/post">post</Link>
-            <Link style={{margin:'20px'}} to="/contact">contact</Link>
-            <Link style={{margin:'20px'}} to="/data">LoadData</Link>
+    const linkStyle = { margin: '20px' };
 
-           
-        </div>
+    return (
+        <nav>
+            <Activelink style={linkStyle} to="/">home</Activelink>
+            <Activelink style={linkStyle} to="/about">about</Activelink>
+            <Activelink style={linkStyle} to="/post">post</Activelink>
+            <Activelink style={linkStyle} to="/contact">contact</Activelink>
+            <Activelink style={linkStyle} to="/data">LoadData</Activelink>
+        </nav>
     );
 };
 

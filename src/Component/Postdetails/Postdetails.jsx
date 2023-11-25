@@ -10,6 +10,7 @@ const Postdetails = ({post}) => {
             <h3>title:{title}</h3>
             {/* <p>body:{body}</p> */}
             <Link  to={`/post/${id}`}>see post details</Link>
+            <button>see post data</button>
 
             
         </div>
