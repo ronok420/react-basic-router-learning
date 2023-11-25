@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div style={{ backgroundColor: 'salmon', borderRadius: '15px',padding:'10px' }}>
+        <div style={{ backgroundColor: 'salmon', borderRadius: '15px',padding:'10px',marginTop:'20px' }}>
             <h2>this is the contact page</h2>
         </div>
     );
